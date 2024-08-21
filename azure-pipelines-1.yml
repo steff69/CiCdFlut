@@ -1,0 +1,18 @@
+trigger:
+- master
+
+pool:
+  name: Agentpool
+  demands:
+    - agent.name -equals agentn
+  clean : false
+
+
+steps:
+
+- task: FlutterBuild@0
+  inputs:
+    target: 'apk'
+    projectDirectory: './'
+    flutterDirectory: './flutter/bin'
+
