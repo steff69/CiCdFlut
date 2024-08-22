@@ -1,0 +1,28 @@
+trigger:
+- none
+
+pool:
+  name: agentpoolnew
+  demands:
+    - agent.name -equals agentl
+ 
+
+steps:
+- script: |
+    echo $ANDROID_HOME
+    ls $ANDROID_HOME
+  displayName: 'Check ANDROID_HOME'
+
+
+- script: |
+    
+    /home/azureuser/myagent/sdk/flutter/bin/flutter pub upgrade
+    /home/azureuser/myagent/sdk/flutter/bin/flutter pub get
+  displayName: 'pub upgrade'
+
+- task: FlutterBuild@0
+  inputs:
+    target: 'apk'
+    projectDirectory: './'
+    flutterDirectory: '/home/azureuser/myagent/sdk/flutter/bin'
+
