@@ -5,10 +5,14 @@ pool:
   name: agentpoolnew
   demands:
     - agent.name -equals agentl
-
+  env:
+  ANDROID_HOME: /home/azureuser/myagent/sdk/android-sdk
 
 steps:
-
+- script: |
+    echo $ANDROID_HOME
+    ls $ANDROID_HOME
+  displayName: 'Check ANDROID_HOME'
 
 
 - task: FlutterBuild@0
