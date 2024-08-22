@@ -14,6 +14,11 @@ steps:
   displayName: 'Check ANDROID_HOME'
 
 
+- script: |
+    
+    /home/azureuser/myagent/sdk/flutter/bin pub upgrade
+    /home/azureuser/myagent/sdk/flutter/bin pub get
+  displayName: 'pub upgrade'
 
 - task: FlutterBuild@0
   inputs:
