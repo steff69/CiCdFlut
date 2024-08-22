@@ -36,5 +36,5 @@ steps:
 
 - task: FlutterTest@0
   inputs:
-    projectDirectory: './'
+    projectDirectory: './test'
   displayName: 'tastouta '
