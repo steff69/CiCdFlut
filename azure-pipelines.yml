@@ -16,8 +16,8 @@ steps:
 
 - script: |
     
-    /home/azureuser/myagent/sdk/flutter/bin pub upgrade
-    /home/azureuser/myagent/sdk/flutter/bin pub get
+    /home/azureuser/myagent/sdk/flutter/bin/flutter pub upgrade
+    /home/azureuser/myagent/sdk/flutter/bin/flutter pub get
   displayName: 'pub upgrade'
 
 - task: FlutterBuild@0
