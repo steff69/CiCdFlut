@@ -26,3 +26,8 @@ steps:
     projectDirectory: './'
     flutterDirectory: '/home/azureuser/myagent/sdk/flutter/bin'
 
+
+- task: FlutterTest@0
+  inputs:
+    projectDirectory: './'
+    testName: 'test1'
