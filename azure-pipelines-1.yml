@@ -30,4 +30,4 @@ steps:
 - task: FlutterTest@0
   inputs:
     projectDirectory: './'
-    testName: 'test1'
+    testName: 'testt.dart'
