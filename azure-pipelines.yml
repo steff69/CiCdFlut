@@ -6,10 +6,7 @@ pool:
   demands:
     - agent.name -equals agentl
  
- 
-variables:
-  ANDROID_HOME: /home/azureuser/myagent/sdk/android-sdk  # Path to your Android SDK
-  PATH: $(ANDROID_HOME)/cmdline-tools/bin:$(ANDROID_HOME) :$(PATH)
+
 steps:
 - script: |
     echo $ANDROID_HOME
