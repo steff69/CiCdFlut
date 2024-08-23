@@ -31,12 +31,12 @@ steps:
     flutterDirectory: '/home/azureuser/myagent/sdk/flutter/bin'
 
 - script: |
-    ls ./test
+    ls -l
   displayName: 'is there widget ?'
 
 - task: FlutterTest@0
   inputs:
     projectDirectory: './'
-    testName: 'test/widget_test.dart'
+    
   displayName: 'tastouta '
   
