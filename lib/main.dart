@@ -52,4 +52,7 @@ Future inittalServices() async {
   await Get.putAsync(() => TestServices().init());
   await Get.putAsync(() => RestaurantServices().init());
   await Get.putAsync(() => CategoryService().init());
+    Get.put(TetyController());
+
 }
+
