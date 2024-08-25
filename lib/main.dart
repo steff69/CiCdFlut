@@ -22,14 +22,7 @@ void main() async {
 
   runApp(const MyApp());
 }
-Future inittalServices() async {
-  await Get.putAsync(() => TestServices().init());
-  await Get.putAsync(() => RestaurantServices().init());
-  await Get.putAsync(() => CategoryService().init());
-  
-  // Ajoutez cette ligne pour initialiser TetyController
-  Get.put(TetyController());
-}
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
