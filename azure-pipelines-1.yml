@@ -38,5 +38,5 @@ steps:
   inputs:
     projectDirectory: './'
     
-  displayName: 'tastouta '
+  displayName: 'test '
   
