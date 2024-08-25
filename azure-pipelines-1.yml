@@ -34,9 +34,7 @@ steps:
     ls -l
   displayName: 'is there widget ?'
 
-- task: FlutterTest@0
-  inputs:
-    projectDirectory: './'
-    
-  displayName: 'test '
+- script: |
+    /home/azureuser/myagent/sdk/flutter/bin/flutter test
+  displayName: 'Run Tests'
   
